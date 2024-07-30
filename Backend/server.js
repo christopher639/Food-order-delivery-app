@@ -15,6 +15,7 @@ app.use(cors())
 connectDB();
 //api end point
 app.use("/api/food",foodRouter)
+app.use("/images",express.static('uploads'))
 
 //app get method
 app.get("/",(req,res)=>{
